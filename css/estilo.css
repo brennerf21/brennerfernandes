@@ -1,0 +1,287 @@
+/*
+*
+* @author Brenner Fernandes
+* @Version 0.1
+*/
+
+/*========================= Layout =========================*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body, .capa {
+	height: 50%;
+	
+
+}
+
+body {
+	/*border: 1px solid red;*/
+	background: linear-gradient(140deg,#01DFA5,#01A9DB);
+	background-attachment: fixed; 
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden; /* Esconde a barra horinzontal */ 
+}
+
+/* --- Barra de Navegação --- */
+.img-logo {
+	/*border: 1px solid red;*/
+	height: 80px;
+	width: 80px;
+	display: block; /*Ajusta de acordo com a configuração pre-determinada na classe 'height e width'*/
+	background: url('../img/brennericone.png') no-repeat; 
+	background-size: contain; /*O atributo contains define o mesmo tamanho que está configurada a classe 'Height e width'*/
+	color: transparent;
+}
+
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: none;
+
+}
+
+.navbar-brand {
+	padding: 0px;
+
+}
+
+
+.navbar-inverse .navbar-nav>li>a, #rodape .nav a {
+	color: white;
+	/*border: 1px solid red;*/
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover {
+	color: #9bf0e1;
+	background: none; 
+
+}
+
+
+/* --- Imagem fixa da Página --- */
+
+.capa {
+	/*border: 1px solid red;*/
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 110px 0px 10px 0px;
+	
+
+}
+
+/* --- Botões --- */
+
+.btn-custom {
+	/* border: 1px solid red; */
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	/* padding: 10px 35px;
+	margin: 0px 15px; */
+	/*Utilizará MediaQuerys*/
+
+
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+	background-color: #04B4AE;
+
+}
+
+.btn-roxo:hover {
+	background-color: #088A85;	
+	color: white;
+}
+
+.btn-submit {
+	background-color: #04B4AE;	
+	color: white;
+	border: none;
+	padding: 5px 15px;
+	margin-right: 20px;
+	
+	/*border: 2px solid white;*/
+}
+
+.btn-submit:hover {
+	
+	background-color: #088A85;
+	color: #FFF;	
+}
+
+/* --- Secão Serviços --- */
+#servicos {
+	background-color: white;
+	padding: 20px 0px 20px 0px;
+	/*border:	1px solid red;*/
+}
+
+#map {
+	background-color: white;
+	padding: 1px 0px 1px 0px;
+	border:	2px solid #088A85;
+	height:250px;
+	width: 100%;	
+}
+
+.albuns {
+	padding: 10px;
+}
+
+
+/* --- Secão recursos --- */
+#recursos {
+	/* background-color: white;*/
+	padding: 20px 0px 20px 0px;
+}
+
+.rotacionar1{
+	margin-top: -50px;
+	padding-left: 60px;
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg); /*Mozila */
+	-webkit-transform: rotate(30deg); /*Chrome, Safari e Opera*/
+	-ms-transform: rotate(30deg); /* IE 9 */
+}
+
+.rotacionar2{
+	margin-top: 300px;
+	/*padding-left: 80px; */
+	/* transform: rotate(180deg);
+	-moz-transform: rotate(180deg); /*Mozila */
+	/* -webkit-transform: rotate(180deg); /*Chrome, Safari e Opera*/
+	/* -ms-transform: rotate(180deg); /* IE 9 */
+}
+
+
+
+/** Enviar Mensagem **/
+
+#botaoEnviar {
+	text-align: center;
+}
+
+
+/* --- Rodapé --- */
+footer {
+	background-color: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social {
+	float: right;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/*========================= Tipografia =========================*/
+
+h1 {
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: -0.0.5em; /*Tag para aumentar o espaçamento entre as letras*/
+	margin-bottom: 25px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#recursos h4 {
+	text-align: center;
+	font-size: 26px;
+	margin-top: -5px;
+	letter-spacing: -0.0.1em; /*Tag para aumentar o espaçamento entre as letras*/
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 900;
+	color: #FFF;
+}
+
+#recursos p {
+	margin-top: -5px;
+	text-align: left;
+	font-size: 18px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 400;
+	color: #FFF;
+}
+
+/* Media Querys */
+/* xs */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 18px;
+	}
+	.btn-custom {
+		padding: 10px 25px;
+		margin: 10px 15px; 
+	}
+
+	.albuns {
+		padding: 0px 15px 10px 15px;
+		width: 80px;
+		height: 70px;
+		float: right;
+		
+	}
+
+
+	.rotacionar2{
+	margin-top: 30px;
+	/*padding-left: 80px; */
+	/* transform: rotate(180deg);
+	-moz-transform: rotate(180deg); /*Mozila */
+	/* -webkit-transform: rotate(180deg); /*Chrome, Safari e Opera*/
+	/* -ms-transform: rotate(180deg); /* IE 9 */
+	}
+
+	/* --- Rodapé --- */
+	footer {
+		padding: 10px 0px 20px 0px;
+		position: relative;
+	}
+
+
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+	.btn-custom {
+		padding: 10px 40px;
+		margin: 0px 8px;
+	}
+}	
+
+/* md */
+@media screen and (min-width: 992px) {
+
+
+}
+
+
+/* lg */
+@media screen and (min-width: 1200px) {
+	
+}
+/* Fim Media Querys*/
+
+
+
+
+
